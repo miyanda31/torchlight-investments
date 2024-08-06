@@ -8,6 +8,57 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+@media (max-width: 991px) {
+    .text-advert li {
+        width: 42%;
+    }
+}
+
+@media (max-width: 414px) {
+    .text-advert li {
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .text-advert li {
+        width:100%;
+    }
+
+}
+@media (max-width: 600px) {
+    .text-advert li {
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .text-advert li {
+        width: 100%;
+    }
+}
+
+/*.text-advert {*/
+/*    list-style: outside none none;*/
+/*    margin: 0;*/
+/*    padding: 20px 0 0 11px;*/
+/*    color: #666;*/
+/*}*/
+
+.text-advert li {
+    display: inline-table;
+    margin: 5px 0;
+    padding: 0 0 0 22px;
+    line-height: 17px;
+    font-size: 14px;
+}
+
+.icon-center {
+    width: 45px; height: 45px; margin-top: -20px; left: 50% !important; top: 0 !important; position: absolute !important; justify-content: center; align-items: center
+}
+.translate-middle {
+    transform: translate(-50%, -50%) !important;
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #212529;
@@ -139,6 +190,14 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   border-radius: 50px;
   margin: 0 15px;
   padding: 10px 25px;
+}
+
+.get-started a {
+    background: #eb5d1e;
+    color: #fff;
+    border-radius: 50px;
+    margin: 0 15px;
+    padding: 10px 25px;
 }
 
 .nav-menu .get-started a:hover {

@@ -43,14 +43,20 @@
     <div class="container-fluid d-flex">
 
         <div class="logo mr-auto">
-             <a href="{{route('home')}}"><img src="/img/logots.png" alt="" class="img-fluid"></a>
+             <a href="{{route('home')}}"><img src="/img/logo.png" alt="" class="img-fluid"></a>
         </div>
 
         <nav class="nav-menu d-none d-lg-block">
             <ul>
                 <li class="{{request()->routeIs('home')?'active':''}}"><a href="{{route('home')}}">Home</a></li>
-                <li class="{{request()->routeIs('services')?'active':''}}"><a href="{{route('services')}}" >Services</a></li>
-               <li class="{{request()->routeIs('projects')?'active':''}}"> <a href="{{route('projects')}}">Projects</a></li>
+                <li class="drop-down"><a href="#">Services</a>
+                    <ul>
+                        <li><a href="{{route('web-designing')}}">Web Designing</a></li>
+                        <li><a href="{{route('web-hosting')}}">Web Hosting</a></li>
+                        <li><a href="#">App Development</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                    </ul>
+                </li>
                 <li class="{{request()->routeIs('about')?'active':''}}"><a href="{{route('about')}}" >About</a></li>
                 <li class="{{request()->routeIs('contact')?'active':''}}"><a href="{{route('contact')}}">Contact</a></li>
                 <li class="get-started"><a href="#about">Get Started</a></li>
@@ -83,8 +89,7 @@
                     <h4>Useful Links</h4>
                     <ul>
                         <li><i class="bx bx-chevron-right"></i> <a href="{{route('home')}}">Home</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="{{route('services')}}" >Services</a></li>
-                        <li><i class="bx bx-chevron-right"></i>  <a href="{{route('projects')}}">Projects</a></li>
+                        <li><i class="bx bx-chevron-right"></i>  <a href="{{route('web-designing')}}">Projects</a></li>
                         <li><i class="bx bx-chevron-right"></i> <a href="{{route('about')}}" >About</a></li>
                         <li><i class="bx bx-chevron-right"></i> <a href="{{route('contact')}}">Contact</a></li>
                     </ul>
