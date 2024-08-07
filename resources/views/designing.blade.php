@@ -71,7 +71,7 @@
                                 <h1 class="mb-3">
                                     <small class="align-top" style="font-size: 22px; line-height: 45px;">K</small>100,000
                                 </h1>
-                                <a class="btn btn-primary px-4 py-2" href="">Buy Now</a>
+{{--                                <a class="btn btn-primary px-4 py-2" href="">Buy Now</a>--}}
                             </div>
                             <div class="p-4">
                                 <p class="border-bottom pb-2"><i class="bx bx-check bx-sm text-success me-3"></i>10 GB SSD</p>
@@ -99,7 +99,7 @@
                                     <small class="align-top" style="font-size: 22px; line-height: 45px;">K</small>250,000
                                 </h1>
 
-                                <a class="btn btn-secondary px-4 py-2" href="">Buy Now</a>
+{{--                                <a class="btn btn-secondary px-4 py-2" href="">Buy Now</a>--}}
                             </div>
                             <div class="p-4">
                                 <p class="border-bottom pb-2"><i class="bx bx-check bx-sm text-success me-3"></i>30 GB SSD</p>
@@ -126,7 +126,7 @@
                                 <h1 class="mb-3">
                                     <small class="align-top" style="font-size: 22px; line-height: 45px;">K</small>750,000
                                 </h1>
-                                <a class="btn btn-primary px-4 py-2" href="">Buy Now</a>
+{{--                                <a class="btn btn-primary px-4 py-2" href="">Buy Now</a>--}}
                             </div>
                             <div class="p-4">
                                 <p class="border-bottom pb-2"><i class="bx bx-check bx-sm text-success me-3"></i>Unlimited Disk Space</p>
@@ -152,10 +152,10 @@
                                 <p class="mb-0">Heavily customized and tailored to your needs</p>
                             </div>
                             <div class="text-center border-bottom p-4">
-                                <a class="btn btn-primary px-4 py-2" href="">Request For Quotation</a>
+{{--                                <a class="btn btn-primary px-4 py-2" href="">Request For Quotation</a>--}}
                             </div>
                             <div class="p-4">
-                                <p class="border-bottom pb-2"><i class="bx bx-check bx-sm text-success me-3"></i>
+                                <p class="border-bottom pb-2">
                                     For heavily customized sites, you can always contact us so that we meet your
                                     needs via whatsapp for instant response</p>
                             </div>
@@ -166,6 +166,32 @@
             </div>
         </div>
         <!-- Pricing End -->
+
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services section-bg">
+            <div class="container">
+
+                <div class="section-title" data-aos="fade-up">
+                    <h2>What kind of sites</h2>
+                    <p>With the ability to customize, here is our list</p>
+                </div>
+
+                <div class="row">
+                    @foreach($websites as $website)
+                        <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="icon-box">
+                                <div class="icon"><i class="bx bxs-{{$website['icon']}}"></i></div>
+                                <h4 class="title"><a href="">{{$website['name']}}</a></h4>
+                                <p class="description">{{$website['description']}}</p>
+                            </div>
+                        </div>
+                    @endforeach
+
+
+                </div>
+
+            </div>
+        </section><!-- End Services Section -->
 
     </main>
 @endsection

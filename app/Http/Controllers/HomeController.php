@@ -121,52 +121,99 @@ including the complexity of the design, the number of pages, and any additional 
                 'icon'=>'user-voice',
             ],
         ];
-        return view('designing',compact('reasons'));
+
+        $websites = [
+            [
+                'icon'=>'cart',
+                "name"=>"E-commerce Websites",
+                "description"=>"These are online portals where goods and services can be bought and sold. They require features like shopping carts, secure payment gateways, and product catalogs."
+            ],
+
+    ['icon'=>'business',
+        "name"=>"Business Websites",
+        "description"=>"These websites provide essential information about a business such as its services, contact information, and company background."
+    ],
+
+   ['icon'=>'graduation',
+       "name"=>"Educational Websites",
+       "description"=>"These sites are designed for educational institutions and offer information about the institution, courses, admissions, and more."
+   ],
+
+    ['icon'=>'home-heart',
+        "name"=>"Non-profit Websites",
+        "description"=>"These websites are created for non-profit organizations and charities. They often include features for online donations and event registrations."
+    ],
+
+    ['icon'=>'chess',
+        "name"=>"Portfolio Websites",
+        "description"=>"These are used by artists, designers, photographers, and freelancers to showcase their work to potential clients."
+    ],
+
+     ['icon'=>'file',
+         "name"=>"Blogs",
+         "description"=>"These websites are regularly updated with articles, photos, and videos. They're often used by individuals or groups to share thoughts, ideas, and experiences."
+     ],
+
+['icon'=>'news',
+    "name"=>"News Websites",
+    "description"=>"These sites are dedicated to sharing news and articles on various topics. They require features to categorize and archive content."
+],
+
+['icon'=>'face',
+    "name"=>"Social Media Websites",
+    "description"=>"These websites are platforms where users can create profiles and interact with each other through posts, comments, and private messaging."
+]
+
+];
+        return view('designing',compact('reasons','websites'));
     }
 
     public function contact()
     {
         return view('contact');
     }
-
-    public function services()
+    public function hosting(): \Illuminate\Contracts\View\View|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application
     {
-        return view('services');
+
+        $reasons = [
+            [
+                'name'=>'99% Uptime',
+                'description'=>'Time is money and we will make sure you are 99.99% there ensuring that your customers or clients are able to find you all the time',
+                'icon'=>'server',
+            ],
+            [
+                'name'=>'NVME servers',
+                'description'=>'Our servers run on the latest lightining NVME storage to ensure that your website is fast and cached for better indexing',
+                'icon'=>'bolt',
+            ],
+            [
+                'name'=>'Professional Emails',
+                'description'=>'Get fully customized professional email addresses that match your brand name and stand out of the cloud',
+                'icon'=>'envelope',
+            ],
+            [
+                'name'=>'Control Panel',
+                'description'=>'Everything is in your hands through our state of the art cPanel to ensure that your developers manage everything.',
+                'icon'=>'dashboard',
+            ],
+            [
+                'name'=>'Maintenance and Back Up',
+                'description'=>'We offer ongoing maintenance and update services to ensure your website remains secure, functional, and up-to-date with the latest web standards and technologies.',
+                'icon'=>'cog',
+            ],
+            [
+                'name'=>'Secure SSL',
+                'description'=>'Your site is secure through SSL certificate provided which means you always send your data in encrypted format',
+                'icon'=>'check-shield',
+            ],
+        ];
+        return view('hosting',compact('reasons'));
     }
+
+
     public function quotation()
     {
         return view('welcome');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
-    }
 }
