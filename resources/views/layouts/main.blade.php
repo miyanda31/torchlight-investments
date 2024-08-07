@@ -12,6 +12,7 @@
 
     <!-- Favicons -->
     <link href="/favicon.icon" rel="icon">
+
     <link href="/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
