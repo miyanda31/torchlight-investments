@@ -11,8 +11,8 @@
     <meta content="Torchlight Investments Ltd specializes in web designing and hosting, mobile application development, Ecommerce sites as well as SEO optimization " name="description">
 
     <!-- Favicons -->
-    <link href="/img/favicon.png" rel="icon">
-    <link href="/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="/favicon.png" rel="icon">
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
