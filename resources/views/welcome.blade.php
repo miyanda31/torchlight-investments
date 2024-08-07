@@ -74,12 +74,12 @@
 
                 <div class="owl-carousel clients-carousel" data-aos="fade-up" data-aos-delay="100">
                     <img src="/img/ncst.png" alt="">
-                    <img src="/img/finances.jpg" alt="">
+                    <img src="/img/finances.JPG" alt="">
                     <img src="/img/logo-dark.png" alt="">
-                    <img src="/img/holdings.jpg" alt="">
-                    <img src="/img/construction.jpg" alt="">
+                    <img src="/img/holdings.JPG" alt="">
+                    <img src="/img/construction.JPG" alt="">
                     <img src="/img/ccap.jpg" alt="">
-                    <img src="/img/livestock.jpg" alt="">
+                    <img src="/img/livestock.JPG" alt="">
 
                 </div>
             </div>
