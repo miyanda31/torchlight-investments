@@ -19,5 +19,6 @@ Route::get('about',[\App\Http\Controllers\HomeController::class,'about'])->name(
 Route::get('contact',[\App\Http\Controllers\HomeController::class,'contact'])->name('contact');
 Route::get('web-designing',[\App\Http\Controllers\HomeController::class,'designing'])->name('web-designing');
 Route::get('web-hosting',[\App\Http\Controllers\HomeController::class,'hosting'])->name('web-hosting');
+Route::get('email-hosting',[\App\Http\Controllers\HomeController::class,'email'])->name('email-hosting');
 Route::get('services',[\App\Http\Controllers\HomeController::class,'services'])->name('services');
 Route::get('quotation',[\App\Http\Controllers\HomeController::class,'quotation'])->name('quotation');

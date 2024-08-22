@@ -60,7 +60,7 @@
                 </li>
                 <li class="{{request()->routeIs('about')?'active':''}}"><a href="{{route('about')}}" >About</a></li>
                 <li class="{{request()->routeIs('contact')?'active':''}}"><a href="{{route('contact')}}">Contact</a></li>
-                <li class="get-started"><a href="#about">Get a Quote</a></li>
+                <li class="get-started"><a href="{{route('quotation')}}">Get a Quote</a></li>
             </ul>
         </nav><!-- .nav-menu -->
 

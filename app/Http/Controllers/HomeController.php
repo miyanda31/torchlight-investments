@@ -172,6 +172,11 @@ including the complexity of the design, the number of pages, and any additional 
     {
         return view('contact');
     }
+
+    public function email()
+    {
+        return view('contact');
+    }
     public function hosting(): \Illuminate\Contracts\View\View|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application
     {
 
@@ -213,7 +218,7 @@ including the complexity of the design, the number of pages, and any additional 
 
     public function quotation()
     {
-        return view('welcome');
+        return view('quotation');
     }
 
 }

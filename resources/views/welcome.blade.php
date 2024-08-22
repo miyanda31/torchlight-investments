@@ -135,7 +135,7 @@
                             <h4 class="title"><a href="">Web Designing</a></h4>
                             <p class="description">We develop highly customized websites just to meet your needs while supporting you after you host </p>
                             <br>
-                            <p class="get-started"><a href="#about">Read More</a></p>
+                            <p class="get-started"><a href="{{route('web-designing')}}">Read More</a></p>
                         </div>
                     </div>
 
@@ -145,7 +145,7 @@
                             <h4 class="title"><a href="">Web Hosting</a></h4>
                             <p class="description">Our servers have 99.99% uptime which means you dont have to relax and are heavily affordable</p>
                             <br>
-                            <p class="get-started"><a href="#about">Read More</a></p>
+                            <p class="get-started"><a href="{{route('web-hosting')}}">Read More</a></p>
                         </div>
                     </div>
 
@@ -165,7 +165,7 @@
                             <h4 class="title"><a href="">Email Hosting</a></h4>
                             <p class="description">Let your emails be more professional and customized for your company</p>
                             <br>
-                            <p class="get-started"><a href="#about">Read More</a></p>
+                            <p class="get-started"><a href="{{route('email-hosting')}}">Read More</a></p>
                         </div>
                     </div>
 
@@ -174,8 +174,6 @@
                             <div class="icon"><i class="bx bx-search"></i></div>
                             <h4 class="title"><a href="">SEO optimization</a></h4>
                             <p class="description">Let your site stand out of the crowd and let search engines index your site quickly </p>
-                            <br>
-                            <p class="get-started"><a href="#about">Read More</a></p>
                         </div>
                     </div>
 
@@ -184,8 +182,6 @@
                             <div class="icon"><i class="bx bx-money"></i></div>
                             <h4 class="title"><a href="">Digital Marketing</a></h4>
                             <p class="description">Reach out to millions with your business idea on social media with a few hours </p>
-                            <br>
-                            <p class="get-started"><a href="#about">Read More</a></p>
                         </div>
                     </div>
 
